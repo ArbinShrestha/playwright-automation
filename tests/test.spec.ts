@@ -12,6 +12,7 @@ await page.goto('https://testing-tradeflow.waterflowtechnology.net/transaction/p
     // Increment the amount dynamically in each loop
     const dynamicValue = (i * 0.8).toFixed(2);  // Increments by 0.8 each iteration
     await page.getByRole('textbox').fill(dynamicValue);
+    //lol
 
     await page.getByRole('button', { name: 'Save' }).click();
   }
